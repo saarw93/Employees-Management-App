@@ -15,7 +15,7 @@ This is a ASP.Net Core 3 Application for managing employees by their managers. I
  
 Data is persisted on MSSQL Database in a local manner. Therefore, for using it you should open Database in MSSQL on your machine,
 and use the employees-management-dump.sql file for creating the tables and populate them with objects.
-In addition, you should config in the appsettings.json file your own mssql server name (in "ConnectionStrings": { "DevConnection":"Server=<YOUR-SERVER-NAME>;..."}
+In addition, you should config in the appsettings.json file your own mssql server name (in "ConnectionStrings": { "DevConnection":"Server=YOUR-SERVER-NAME;..."}
 
 
 The ASP.Net core application runs at: http://localhost:58369  
