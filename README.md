@@ -35,9 +35,9 @@ $ git clone https://github.com/saarw93/Employees-Management-App.git
 
 navigate to the folder where you made the clone above.
 
-For running the ASP.Net Core app, navigate to "EmployeesManagementAPI" folder and run the following:
-$ dotnet build
+For running the ASP.Net Core app, navigate to "EmployeesManagementAPI" folder and run the following:\n
+$ dotnet build  \n
 $ dotnet run --urls="http://localhost:58369" 
 
-For running the Angular app, navigate to "AngularFrontend" folder and run the following:
+For running the Angular app, navigate to "AngularFrontend" folder and run the following: \n
 $ ng serve
