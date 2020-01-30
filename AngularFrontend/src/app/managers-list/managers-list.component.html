@@ -1,0 +1,27 @@
+<div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Managers
+    </button>
+    <div class="dropdown-menu">
+        <table class="table table-bordered table-striped text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ManagerID</th>
+                    <th>Name</th>
+                    <th>LastName</th>
+                    <th>ID</th>
+                    <th>Show Employees</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let manager of managers">
+                    <td>{{manager.ManagerID}}</td>
+                    <td>{{manager.Name}}</td>
+                    <td>{{manager.LastName}}</td>
+                    <td>{{manager.ID}}</td>
+                    <td><a class="dropdown-item" (click)="getManagerID(manager.ManagerID)"><i class="fas fa-list-ul"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>

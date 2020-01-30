@@ -1,0 +1,25 @@
+  
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped text-center">
+        <thead class="thead-dark">
+        <tr>
+          <th>EmployeeID</th>
+          <th>Name</th>
+          <th>LastName</th>
+          <th>ID</th>
+          <th>ManagerID</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.EmployeeID}}</td>
+                <td>{{employee.Name}}</td>
+                <td>{{employee.LastName}}</td>
+                <td>{{employee.ID}}</td>
+                <td>{{employee.ManagerID}}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

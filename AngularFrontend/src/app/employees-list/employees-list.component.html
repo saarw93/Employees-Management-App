@@ -1,0 +1,51 @@
+  
+<div class="card my-5">
+  <ul class="text-center list-inline py-3">
+    <li class="list-inline-item"><div class="form-group">
+      <input type="number" class="form-control" placeholder="Search by EmployeeID" [(ngModel)] = "searchKeyEmployeeID"/>
+    </div></li>
+    <li class="list-inline-item"><div class="form-group">
+      <input type="text" class="form-control" placeholder="Search by Name" [(ngModel)] = "searchKeyName"/>
+    </div></li>
+    <li class="list-inline-item"><div class="form-group">
+      <input type="text" class="form-control" placeholder="Search by LastName" [(ngModel)] = "searchKeyLastName"/>
+    </div></li>
+    <li class="list-inline-item"><div class="form-group">
+      <input type="text" class="form-control" placeholder="Search by ID" [(ngModel)] = "searchKeyID"/>
+    </div></li>
+    <li class="list-inline-item"><div class="form-group">
+      <input type="number" class="form-control" placeholder="Search by ManagerID" [(ngModel)] = "searchKeyManagerID"/>
+    </div></li>
+  </ul>
+
+  <div class="card-body">
+    <table class="table table-bordered table-striped text-center">
+      <thead class="thead-dark">
+      <tr>
+        <th>EmployeeID</th>
+        <th>Name</th>
+        <th>LastName</th>
+        <th>ID</th>
+        <th>ManagerID</th>
+        <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let employee of employees | employeesFilter:searchKeyEmployeeID: searchKeyName:
+            searchKeyLastName: searchKeyID: searchKeyManagerID">
+              <td>{{employee.EmployeeID}}</td>
+              <td>{{employee.Name}}</td>
+              <td>{{employee.LastName}}</td>
+              <td>{{employee.ID}}</td>
+              <td>{{employee.ManagerID}}</td>
+              <td>
+                <ul>
+                  <li class="list-inline-item"><button (click)="editEmployee(employee)" class="btn btn-primary"><i class="fas fa-user-edit"></i> Edit</button></li>
+                  <li class="list-inline-item"><button (click)="deleteEmployee(employee.EmployeeID)" class="btn btn-danger"><i class="fas fa-trash"></i> delete</button></li>
+                </ul>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
