@@ -13,15 +13,15 @@ This is a ASP.Net Core 3 Application for managing employees by their managers. I
 (There are also add, delete and update for managers, but not in the angular app for now)
 
  
-Data is persisted on MSSQL Database in a local way. Therefore, for using it you should open Database in MSSQL on your machine,
-and use the employees-management-dump.sql file for creating the tables and populate them with objects.
+Data is persisted on MSSQL Database in a local way. Therefore, for using it you should open Database in MSSQL on your machine,  
+and use the employees-management-dump.sql file for creating the tables and populate them with objects.  
 
 
-The ASP.Net core application runs at: http://localhost:58369
+The ASP.Net core application runs at: http://localhost:58369  
 
-To view the Angular app, point your browser to http://localhost:4200
+To view the Angular app, point your browser to http://localhost:4200  
 
-*Please note that for running the angular application you must first run the ASP.Net Core application.
+*Please note that for running the angular application you must first run the ASP.Net Core application.  
 
 
 
@@ -35,9 +35,9 @@ $ git clone https://github.com/saarw93/Employees-Management-App.git
 
 navigate to the folder where you made the clone above.
 
-For running the ASP.Net Core app, navigate to "EmployeesManagementAPI" folder and run the following:\n
-$ dotnet build  \n
-$ dotnet run --urls="http://localhost:58369" 
+For running the ASP.Net Core app, navigate to "EmployeesManagementAPI" folder and run the following:  
+$ dotnet build  
+$ dotnet run --urls="http://localhost:58369"   
 
-For running the Angular app, navigate to "AngularFrontend" folder and run the following: \n
+For running the Angular app, navigate to "AngularFrontend" folder and run the following:  
 $ ng serve
